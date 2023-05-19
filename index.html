@@ -11,7 +11,34 @@
 </head>
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/mobile-logo.png" alt="mobile-logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <i class="fa-solid fa-bars"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa-solid fa-question"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa-solid fa-bell"></i>
+                  </li>
+                </ul>               
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="main-app d-flex">
         <div class="sidebar-phone d-lg-none">
@@ -29,13 +56,13 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-8">
+                    <div class="col-12 col-lg-8">
                         <div class="row">
                             <div class="col-12 next-class mb-3"></div>
                             <div class="col-12 faq"></div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <div class="row">
                             <div class="col-12 to-do mb-3"></div>
                             <div class="col-12 active-users"></div>

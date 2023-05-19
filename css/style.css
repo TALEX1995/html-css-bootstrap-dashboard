@@ -16,6 +16,12 @@ header {
     background-color: yellow;
 }
 
+.navbar-brand .img-fluid {
+    width: 50px;
+}
+
+
+
 
 /* MAIN-APP */
 
@@ -47,6 +53,7 @@ header {
 main {
     width: calc(100% - 50px);
     background-color: blue;
+    overflow: auto;
 }
 
 .students {
