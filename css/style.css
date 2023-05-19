@@ -17,12 +17,11 @@ header {
 }
 
 
-/* MAIN */
+/* MAIN-APP */
 
-main {
+.main-app {
     height: calc(100vh - 80px);
     max-width: 100%;
-    background-color: blue;
 }
 
 
@@ -39,6 +38,54 @@ main {
 
 .sidebar-tablet {
     width: 250px;
-    height: 100%;
     background-color: black;
+}
+
+
+/* MAIN */
+
+main {
+    width: calc(100% - 50px);
+    background-color: blue;
+}
+
+.students {
+    height: 100px;
+    background-color: red;
+}
+
+
+/* MAIN LEFT SIDE */
+
+.next-class {
+    height: 500px;
+    background-color: black;
+}
+
+.faq {
+    height: 200px;
+    background-color: black;
+}
+
+/* MAIN RIGHT SIDE  */
+
+.to-do {
+    height: 200px;
+    background-color: black;
+}
+
+.active-users {
+    height: 500px;
+    background-color: black;
+}
+
+
+/* MEDIA */
+
+@media screen and (min-width: 992px) {
+    
+    main {
+        width: calc(100% - 250px)
+    }
+
 }
