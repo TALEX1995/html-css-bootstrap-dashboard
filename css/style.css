@@ -1,0 +1,44 @@
+
+/* 
+Extra small <576px 
+Small ≥576px (sm)
+Medium ≥768px (md)
+Large ≥992px (lg)
+X-Large ≥1200px (xl)
+XX-Large ≥1400px (xxl)
+*/
+
+
+/* HEADER */
+
+header {
+    height: 80px;
+    background-color: yellow;
+}
+
+
+/* MAIN */
+
+main {
+    height: calc(100vh - 80px);
+    max-width: 100%;
+    background-color: blue;
+}
+
+
+/* SIDEBAR PHONE */
+
+.sidebar-phone {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+}
+
+
+/* SIDEBAR TABLET */
+
+.sidebar-tablet {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
