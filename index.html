@@ -11,34 +11,28 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img class="img-fluid" src="img/mobile-logo.png" alt="mobile-logo">
-              </a>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <i class="fa-solid fa-bars"></i>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa-solid fa-question"></i>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa-solid fa-bell"></i>
-                  </li>
-                </ul>               
-              </div>
+        <div class="container-fluid py-3">
+            <div class="row align-items-center bg-white">
+                <div class="col-auto">
+                    <img class="img-fluid d-lg-none" src="img/mobile-logo.png" alt="mobile-logo">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="logo-desktop">
+                </div>
+                <div class="col">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                          <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-auto d-flex">
+                    <button><i class="fa-solid fa-bars d-none d-lg-block"></i></button>
+                    <button><i class="fa-solid fa-question-circle px-3 d-none d-lg-block"></i></button>
+                    <button><i class="fa-solid fa-ellipsis-vertical pe-3 d-none d-lg-block"></i></button>
+                    <button><i class="fa-solid fa-bell"></i></button>
+                </div>
             </div>
-          </nav>
+        </div>
     </header>
     <div class="main-app d-flex">
         <div class="sidebar-phone d-lg-none">

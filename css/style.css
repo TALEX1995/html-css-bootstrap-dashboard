@@ -9,24 +9,47 @@ XX-Large ≥1400px (xxl)
 */
 
 
-/* HEADER */
+/* CUSTOM PROPERTIES */
 
-header {
-    height: 80px;
-    background-color: yellow;
+:root {
+    --bg-color-gray: #e5e5e5;
+    --bg-color-lightgray: #f8f9fa;
 }
 
-.navbar-brand .img-fluid {
+/* HEADER */
+
+header { 
+    background-color: var(--bg-color-lightgray);
+}
+
+header .img-fluid {
     width: 50px;
 }
 
+header .form-control {
+    background-color: var(--bg-color-gray);
+}
 
+header .fa-bell {
+    color: #ff8f00;
+}
+
+header button {
+    background-color: white;
+    border: none;
+}
+
+/* 
+header .fa-question {
+    background-color: #5b5858;
+    border-radius: 50%;
+} */
 
 
 /* MAIN-APP */
 
 .main-app {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     max-width: 100%;
 }
 
