@@ -120,10 +120,6 @@ main {
     font
 }
 
-.faq {
-    height: 200px;
-    background-color: black;
-}
 
 thead th,
 tbody td {
@@ -133,6 +129,11 @@ tbody td {
 thead th:first-child {
     text-align: left;
 }
+
+.accordion button {
+    font-weight: 700;
+}
+
 
 /* MAIN RIGHT SIDE  */
 
