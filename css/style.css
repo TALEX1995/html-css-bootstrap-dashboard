@@ -12,6 +12,16 @@ XX-Large ≥1400px (xxl)
 /* CUSTOM PROPERTIES */
 
 :root {
+    --size-0-5rem: 0.5rem;
+    --size-0-75rem: 0.75rem;
+    --size-1rem: 1rem;
+    --size-1-25rem: 1.25rem;
+    --size-1-5rem: 1.5rem;
+    --size-2rem: 2rem;
+    --size-2-5rem: 2.5rem;
+    --size-3rem: 3rem;
+    --size-3-5rem: 3.5rem;
+    --size-4rem: 3.5rem;
     --bg-color-gray: #e5e5e5;
     --bg-color-lightgray: #f8f9fa;
     --sidebar-bg-color: #051e34;
@@ -49,30 +59,34 @@ header button {
 }
 
 
-/* SIDEBAR PHONE */
+/* SIDEBAR */
 
-.sidebar-phone {
-    width: 50px;
-    height: 100%;
+.sidebar {
+    flex: 0 0 50px;
+    color: white;
+    font-size: var(--size-1-25rem);
 }
 
-.sidebar-phone, .sidebar-tablet {
+.sidebar {
     background-color: var(--sidebar-bg-color);
     background-image: url(../img/sidebar-bg.png);
 }
 
-
-/* SIDEBAR TABLET */
-
-.sidebar-tablet {
-    width: 250px;
+.sidebar span {
+    padding-left: 5px;
 }
+
+.sidebar .stats {
+    padding-left: 12px;
+}
+
+
 
 
 /* MAIN */
 
 main {
-    width: calc(100% - 50px);
+    flex: 1 1 auto;
     background-color: blue;
     overflow: auto;
 }
@@ -112,6 +126,10 @@ main {
 
 @media screen and (min-width: 992px) {
     
+    .sidebar {
+        flex-basis: 150px;
+    }
+
     main {
         width: calc(100% - 250px)
     }
