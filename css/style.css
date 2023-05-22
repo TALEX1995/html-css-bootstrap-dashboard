@@ -130,6 +130,7 @@ thead th:first-child {
     text-align: left;
 }
 
+.list-group label,
 .accordion button {
     font-weight: 700;
 }
@@ -137,15 +138,7 @@ thead th:first-child {
 
 /* MAIN RIGHT SIDE  */
 
-.to-do {
-    height: 200px;
-    background-color: black;
-}
 
-.active-users {
-    height: 500px;
-    background-color: black;
-}
 
 thead .number-class {
     width: 50%;
