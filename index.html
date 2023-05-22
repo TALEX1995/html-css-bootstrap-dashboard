@@ -29,7 +29,16 @@
                     <button class="d-none d-lg-block"><i class="fa-solid fa-bars"></i></button>
                     <button class="d-none d-lg-block"><i class="fa-solid fa-question-circle px-3"></i></button>
                     <button class="d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical pe-3"></i></button>
-                    <button><i class="fa-solid fa-bell"></i></button>
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-secondary bg-transparent px-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Profilo</button></li>
+                            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                        </ul>
+                      </div>
                 </div>
             </div>
         </div>
