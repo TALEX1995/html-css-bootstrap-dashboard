@@ -100,12 +100,11 @@ XX-Large ≥1400px (xxl)
 
 
 
-
 /* MAIN */
 
 main {
     flex: 1 1 auto;
-    background-color: blue;
+    background-color: var(--bg-color-lightgray);
     overflow: auto;
 }
 
@@ -113,9 +112,14 @@ main {
 
 /* MAIN LEFT SIDE */
 
+.avatar-table {
+    width: 25px;
+}
+
+
 .next-class {
     height: 500px;
-    background-color: black;
+    background-color: white;
 }
 
 .faq {
