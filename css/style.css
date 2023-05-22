@@ -115,6 +115,11 @@ XX-Large ≥1400px (xxl)
 
 
 
+.header-main .offcanvas {
+    color: black;
+}
+
+
 /* MAIN */
 
 main {
@@ -165,6 +170,10 @@ thead .number-class {
 @media screen and (min-width: 768px) {
     thead .number-class {
         width: 30%;
+    }
+
+    .header-main .btn-primary {
+        padding-bottom: 50px;
     }
 }
 
