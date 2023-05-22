@@ -146,9 +146,20 @@ thead th:first-child {
     background-color: black;
 }
 
+thead .number-class {
+    width: 50%;
+}
 
 
 /* MEDIA */
+
+@media screen and (min-width: 768px) {
+    thead .number-class {
+        width: 30%;
+    }
+}
+
+
 
 @media screen and (min-width: 992px) {
     
@@ -160,4 +171,13 @@ thead th:first-child {
         width: calc(100% - 250px)
     }
 
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    thead .number-class {
+        width: 50%;
+    }
 }
