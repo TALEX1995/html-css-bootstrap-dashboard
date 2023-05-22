@@ -116,15 +116,22 @@ main {
     width: 25px;
 }
 
-
-.next-class {
-    height: 500px;
-    background-color: white;
+.card-header {
+    font
 }
 
 .faq {
     height: 200px;
     background-color: black;
+}
+
+thead th,
+tbody td {
+    text-align: center;
+}
+
+thead th:first-child {
+    text-align: left;
 }
 
 /* MAIN RIGHT SIDE  */
@@ -138,6 +145,7 @@ main {
     height: 500px;
     background-color: black;
 }
+
 
 
 /* MEDIA */
