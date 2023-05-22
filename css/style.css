@@ -29,23 +29,23 @@ XX-Large ≥1400px (xxl)
 
 /* HEADER */
 
-header { 
+.header-page { 
     background-color: var(--bg-color-lightgray);
 }
 
-header .img-fluid {
+.header-page .img-fluid {
     width: 50px;
 }
 
-header .form-control {
+.header-page .form-control {
     background-color: var(--bg-color-gray);
 }
 
-header .fa-bell {
+.header-page .fa-bell {
     color: #ff8f00;
 }
 
-header button {
+.header-page button {
     background-color: white;
     border: none;
 }
