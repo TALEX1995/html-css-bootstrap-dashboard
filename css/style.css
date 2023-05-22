@@ -116,7 +116,9 @@ XX-Large ≥1400px (xxl)
 
 .header-main .offcanvas {
     color: black;
+    width: 100vw;
 }
+
 
 
 /* MAIN */
@@ -133,10 +135,6 @@ main {
 
 .avatar-table {
     width: 25px;
-}
-
-.card-header {
-    font
 }
 
 
@@ -188,7 +186,9 @@ thead .number-class {
         width: calc(100% - 250px)
     }
 
-
+    .header-main .offcanvas {
+        width: 50vw;
+    }
 
 }
 
