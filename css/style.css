@@ -51,6 +51,19 @@ XX-Large ≥1400px (xxl)
     border: none;
 }
 
+/* HEADER - FA SEARCH ICON INSIDE THE SEARCH */
+
+.header-page .input-group {
+    position: relative;
+    align-items: center;
+}
+
+.header-page .input-group-text {
+    position: absolute;
+    background-color: transparent;
+}
+
+
 
 /* MAIN-APP */
 
