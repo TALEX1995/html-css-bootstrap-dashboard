@@ -72,7 +72,7 @@
                     <div class="col-12 col-md-4 col-lg-3 d-flex order-md-2 my-3 justify-content-md-center">
                         <span>Nuovo Studente</span>
 
-                        <button class="btn btn-primary bg-transparent border-0 pt-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <button class="btn btn-primary bg-transparent border-0 pt-0 add-student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="fa-regular fa-square-plus fa-2x ps-3"></i>
                         </button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -81,15 +81,78 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
+                                <form action="https://marcolanci.it/lezioni/read_form.php" method="post">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <form action="https://marcolanci.it/lezioni/read_form.php" method="post">
-                                            <label for="name" class="form-label">Name</label>
-                                            <div class="mb-3">
-                                                <input type="text" class="form-control" id="name" name="name" placeholder="Il tuo nome" aria-describedby="basic-addon3">
-                                            </div>
-                                        </form>
+                                    <div class="col-12 col-md-6">                                       
+                                        <label for="name" class="form-label">Nome</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Inserisci il tuo nome" aria-describedby="basic-addon3">
+                                        </div>
                                     </div>
+                                    <div class="col-12 col-md-6">                                       
+                                        <label for="surname" class="form-label">Cognome</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="surname" name="surname" placeholder="Inserisci il tuo Cognome" aria-describedby="basic-addon3">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">                                       
+                                        <label for="email" class="form-label">E-mail</label>                                       
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">                                       
+                                        <label for="password" class="form-label">Password</label>
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" aria-describedby="basic-addon3">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">                                       
+                                        <label for="address" class="form-label">Indirizzo</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder="Inserisci il tuo indirizzo" aria-describedby="basic-addon3">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">                                       
+                                        <label for="city" class="form-label">Città</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="city" name="city" placeholder="Inserisci la tua città" aria-describedby="basic-addon3">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">                                                      <label for="state" class="form-label">Stato</label>
+                                        <div class="mb-3">
+                                            <select class="form-select" id="state" name="state">
+                                              <option selected>Scegli...</option>
+                                              <option value="1">Italia</option>
+                                              <option value="2">Francia</option>
+                                              <option value="3">Germania</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2">                                       
+                                        <label for="postal-code" class="form-label">Cap</label>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="CAP" aria-describedby="basic-addon3">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="photo" class="form-label">Foto</label>
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="photo" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                          </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <input type="checkbox" required>
+                                        <span>Seleziona per proseguire</span>
+                                    </div>
+                                    <div class="col-auto mt-3 px-0">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                    </div>
+                                    <div class="col-auto mt-3 px-1">
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                    </div>                                  
+                                </form>                                   
                                 </div>
                             </div>
                     </div>
